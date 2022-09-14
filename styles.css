@@ -62,10 +62,9 @@ body {
   display: none;
 }
 #result {
-  position: fixed;
-  top: 10%; 
-  left: 10%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin-top: -42%;
+  left: 30%;
   height: 250px;
   width: 400px;
   background-color: #171717;
@@ -96,6 +95,7 @@ body {
 .hidden {
   display: none;
 }
+
 .title {
   text-align: center;
   color: white;
@@ -155,7 +155,7 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
-  color: white;
+  color: black;
   border-radius: 15px;
   background: rgb(255, 255, 255);
   background: linear-gradient(
