@@ -17,6 +17,7 @@ fetch("./texts.json")
   .then((data) => {
     questionText = data[Math.floor(Math.random() * data.length)];
     question.innerHTML = questionText;
+    console.log(questionText);
   });
 
 // checks the user typed character and displays accordingly
@@ -112,10 +113,11 @@ const start = () => {
     console.log(countdownOverlay);
 
     // finished timer
-    if (count == 0) {
+    if (count === 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "none";
+      countdownOverlay.innerHTML = ``;
       display.classList.remove("inactive");
 
       clearInterval(startCountdown);
